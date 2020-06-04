@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  background: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.3),
+    -30px 0px 40px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  margin: auto;
+  }
+  
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#landing {
+  background: #fff;
+}
+
+#landing-text {
+  align-items: center;
+  display: flex;
+  flex: 0 1 40vw;
+  justify-content: center;
+  height: 50vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+#landing-text h2 {
+  color: #888;
+}
+
+#landing-image {
+  background: url(SoA_img/logo.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+ul{
+  list-style-position: inside;
+  padding: 0rem 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+footer a{
+    color: #333;
+}
+
+/* Adaptive layout */
+
+@media (min-width: 500px) {
+
+  main{
+    width: 100vh;
+  }
+
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text,
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
